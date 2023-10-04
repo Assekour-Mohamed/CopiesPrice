@@ -1,0 +1,17 @@
+Algorithme CopiessPrice
+Variable 
+  n:entier
+  p:reel
+Debut
+  Ecrire("enter copies number")
+  lire(n)
+  si n<10 alors
+    p=n*10
+  sinon  
+    si n<20 alors
+      p=10*0.3 + (n-10)*0.25
+    sinon
+      p=10*0.3 + 10*0.25 +(n-30)*n
+    finsi
+  finsi
+fin
